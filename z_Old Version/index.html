@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Scratch Games</title>
+</head>
+<body>
+<!--Geral-------------------------------------------------------------------->  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #161616;
+    color: white;
+    overflow-x: hidden;
+    display: grid;
+    grid-column: 1fr ;
+    grid-row: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: "navbar"
+                        "cabecalho"
+                        "mensagem"
+                        "jogos"
+                        "footer";
+}
+
+a{
+    list-style: none;
+    color: white;
+    text-shadow: 1px 0px black;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover{
+    border-bottom: 3px solid;
+    border-image: linear-gradient(45deg, #c20d7c, #ffbb00 100%) 1;
+}
+
+
+iframe{
+    margin: 2vw;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    height: 30vh;
+    width: 18vw;
+    z-index: 10;
+}
+    </style>
+    
+    
+    <header>
+<!--Navbar-------------------------------------------------------------------->
+        <nav class="navbar">
+            <a class="logo" href="#">ALEXSANDER P.F.S</a>
+            <ul class="links">
+                <li><a href="/Sites/index.html" >Contact</a></li>
+                <li><a href="/Sites/index.html">About</a></li>
+            </ul>
+        
+        </nav>
+
+        <style>
+            header .navbar{
+                grid-area: navbar;
+                position: fixed;
+                width: 100%;
+                display: flex;
+                height: 5vh;
+                align-items: center;
+                justify-content: space-between;
+                background-color: rgba(22, 22, 22, 0.582);
+                box-shadow: 2px 2px 2px black;
+                padding: 0.75%;
+                font-family: 'Inconsolata', monospace;
+                font-size: large;
+                z-index: 1000;
+            }
+            
+            header ul{
+                display: flex;
+                list-style-type: none;
+            }
+            header li{
+                padding-right: 1vw;
+            }
+        </style>
+<!--Cabeçalho----------------------------------------------------------------->
+        <div class="cabecalho">
+            <h1>W<br>e<br>l<br>c<br>o<br>m<br>e<br>!</h1>
+            <p>Bem vindos a todos! Nesta página se localiza alguns de minhas aplicações feitas on Scratch. <br><br> Para executa-los é só clicar nas bandeirinhas verdes. <br><br>Comandos básicos: W/A/S/D - Respectivamente para cima, esquerda, baixo, direita <br>space - Atirar </p>
+            <img src="https://cdn-icons-png.flaticon.com/512/2618/2618988.png" alt="">
+        </div>
+
+        <style>
+            .cabecalho {
+                grid-area: cabecalho;
+                display: flex;
+                padding-left: 2vw;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+                border-bottom: 5px solid;
+                border-image: linear-gradient(45deg, #c20d7c, #ffbb00 100%) 1;
+
+            }
+
+            .cabecalho h1{
+                text-align: center;
+                transition: 1s;
+            }
+
+            .cabecalho p{
+                font-size: 18px;
+                transition: 1s;
+            }
+        </style>
+
+    </header>
+
+    
+    <main>
+        <section class="mensagens">
+            <h2>Mensagens <italic>-----------------------------------</italic></h2>
+
+            <div class="mensagem_area">
+                <div>
+                <iframe src="https://scratch.mit.edu/projects/660251751/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <p>Feliz Natal!</p>
+                </div>
+            </div>
+        </section>
+        
+    <style>
+        div.mensagem_area {
+            grid-area: mensagem;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+            background-color: rgba(255, 255, 255, 0.068);
+            left: 0;
+            align-items: center;
+                
+        }
+
+        div.mensagem_area p{
+            font-size: 24px;
+            padding: 0.5vh;
+            text-align: center;
+            padding-bottom: 1vw;
+        }
+
+
+        section.mensagens h2{
+            margin-top: 10vh;
+            margin-bottom: 3vh;
+            margin-left: 2vw;
+            align-items: top;
+            color: tomato;
+            font-size: 38px;
+        }
+        </style>
+        
+        
+        <div class="jogos">
+
+                <H2>Jogos ultra divertidos <italic>-----------------------------------</italic></H2>
+                <section class="jogos_area">
+            <!--Nave Espacial-->
+                    <div>
+                        <iframe   iframe src="https://scratch.mit.edu/projects/655764025/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                        <p>Nave Espacial</p>
+                    </div>
+            <!--Caçador-->
+                    <div>
+                        <iframe src="https://scratch.mit.edu/projects/655677399/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                        <p>Weak Hunter</p>
+                    </div>
+            <!--Clássico-->
+                    <div>
+                        <iframe src="https://scratch.mit.edu/projects/648269716/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                        <p>Clássico</p>
+                    </div>
+            <!--Jogo da coleta-->
+                    <div>
+                        <iframe src="https://scratch.mit.edu/projects/648704611/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                        <p>Jogo da Coleta</p>
+                    </div>
+                </section>
+
+
+            <style>
+                section.jogos_area {
+                    grid-area: jogos;
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100vw;
+                    background-color: rgba(255, 255, 255, 0.068);
+                    left: 0;
+                    margin-bottom: 10vh;
+
+                }
+
+                div.jogos h2{
+
+                    margin-top: 10vh;
+                    margin-bottom: 3vh;
+                    margin-left: 2vw;
+                    align-items: top;
+                    color: tomato;
+                    font-size: 38px;
+                        
+                }
+
+                section.jogos_area p{
+                    font-size: 24px;
+                    padding: 0.5vh;
+                    text-align: center;
+                    padding-bottom: 1vw;
+                }
+            </style>
+
+
+
+        </div>
+    </main>
+<!--Rodapé-------------------------------------------------------------------->
+    <footer>
+        <div class="area1">
+        <h2>About me</h2>
+        <a href="https://github.com/Alexsander33set"><img src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/alexsander-patrick-ferreira-santos-5ba0841ba"><img src="https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Squircle-Dark.png" alt=""></a>
+        </div>
+        <div class="area2">
+            <h2>Contact Me:</h2>
+            <a href="mailto:alexsander.patrick@gmail.com" >alexsander.patrick@gmail.com</a>
+        </div>
+    </footer>
+
+    <style>
+        footer{
+            grid-area: footer;
+            height: 12vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2vw;
+            background-color: black;
+            margin: auto;
+        }
+
+        footer img{
+            height: 3vh;
+            margin: 1vh;
+        }
+        footer h2{
+            padding-bottom: 1vh;
+        }
+    </style>
+
+</body>
+</html>
